@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1511304603205.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "556232373",
+    "id" : "68BC1154",
+    "lastKnownWriteTime" : 1511669160,
+    "last_content_update" : 1511669160585,
+    "path" : "~/Dropbox/6 Portfolio/USU/Data Analytics/data_joins_demonstration/Presentation.Rmd",
+    "project_path" : "Presentation.Rmd",
+    "properties" : {
+        "cursorPosition" : "299,20",
+        "scrollLine" : "291"
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}

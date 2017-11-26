@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1511653593249.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "FE4B483B",
+    "lastKnownWriteTime" : 1511658429,
+    "last_content_update" : 1511658429990,
+    "path" : "~/Dropbox/6 Portfolio/USU/Data Analytics/data_joins_demonstration/data_officeparks/Create_MultiTable.R",
+    "project_path" : "data_officeparks/Create_MultiTable.R",
+    "properties" : {
+        "cursorPosition" : "75,0",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

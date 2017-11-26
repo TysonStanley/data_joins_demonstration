@@ -193,8 +193,7 @@ health %>%
 
 ```{r, echo=FALSE}
 demo %>%
-  DT::datatable(options = list(pageLength = 4, 
-                               autoWidth = TRUE),
+  DT::datatable(options = list(pageLength = 4),
                 rownames = FALSE)
 ```
 
@@ -203,8 +202,8 @@ demo %>%
 
 ```{r, echo=FALSE}
 show %>%
-  DT::datatable(options = list(pageLength = 4, dom = "t",
-                               autoWidth = TRUE),
+  DT::datatable(options = list(pageLength = 4, 
+                               dom = "t"),
                 rownames = FALSE)
 ```
 
@@ -218,8 +217,8 @@ inner_join(show, demo, by = "show")
 
 ```{r, eval=TRUE, echo=FALSE, warning=FALSE, message=FALSE}
 inner_join(show, demo, by = "show") %>%
-  DT::datatable(options = list(pageLength = 4, dom = "t",
-                               autoWidth = TRUE),
+  DT::datatable(options = list(pageLength = 4, 
+                               dom = "t"),
                 rownames = FALSE)
 ```
 
@@ -247,8 +246,8 @@ full_join(show, demo, by = "show")
 
 ```{r, eval=TRUE, echo=FALSE, warning=FALSE, message=FALSE}
 full_join(show, demo, by = "show") %>%
-  DT::datatable(options = list(pageLength = 4, dom = "t",
-                               autoWidth = TRUE),
+  DT::datatable(options = list(pageLength = 4, 
+                               dom = "t"),
                 rownames = FALSE)
 ```
 
@@ -274,8 +273,7 @@ full_join(health, demo, by = c("nam", "show")) ## or inner_, left_,, or right_
 
 ```{r, eval=TRUE, echo=FALSE, warning=FALSE, message=FALSE}
 full_join(health, demo, by = c("nam", "show")) %>%
-  DT::datatable(options = list(pageLength = 4,
-                               autoWidth = TRUE),
+  DT::datatable(options = list(pageLength = 4),
                 rownames = FALSE)
 ```
 

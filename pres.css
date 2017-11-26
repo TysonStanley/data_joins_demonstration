@@ -32,6 +32,7 @@ a, a > code {
 .remark-code, .remark-inline-code { 
   font-family: 'Source Code Pro', 'Lucida Console', Monaco, monospace; 
   background-color: #F2F4F4;
+  font-size: 110%;
 }
 .remark-code-line-highlighted     { background-color: #ffff88; }
 

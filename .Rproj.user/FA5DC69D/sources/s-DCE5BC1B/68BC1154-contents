@@ -286,9 +286,11 @@ full_join(health, demo, by = c("nam", "show")) %>%
 full_join(health, demo, by = "nam")
 ```
 
-.large[
+.large[.large[
 This provides 80 rows (not the correct 76)
-]
+]]
+
+--
 
 <br>
 
@@ -296,15 +298,15 @@ This provides 80 rows (not the correct 76)
 full_join(health, demo, by = "show")
 ```
 
-.large[
+.large[.large[
 This provides 1,480 rows (not the correct 76)
-]
+]]
 
 --
 
 <br>
 
-.large[.large[.dcoral[ Why might this happen? ]]]
+.center[.large[.large[.dcoral[ Why might this happen? ]]]]
 
 ---
 background-image: url(fig_bad_join.jpg)

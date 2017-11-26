@@ -5,15 +5,15 @@
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "0",
+    "hash" : "644921776",
     "id" : "68BC1154",
-    "lastKnownWriteTime" : 1511675935,
-    "last_content_update" : 1511675935,
+    "lastKnownWriteTime" : 1511676150,
+    "last_content_update" : 1511676150936,
     "path" : "~/Dropbox/6 Portfolio/USU/Data Analytics/data_joins_demonstration/Presentation.Rmd",
     "project_path" : "Presentation.Rmd",
     "properties" : {
-        "cursorPosition" : "32,16",
-        "scrollLine" : "23"
+        "cursorPosition" : "278,32",
+        "scrollLine" : "282"
     },
     "relative_order" : 2,
     "source_on_save" : false,

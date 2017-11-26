@@ -1,5 +1,5 @@
 ---
-title: "Joining (Merging) Data Sets"
+title: "Joining Data Sets <br><br> 🖇"
 subtitle: "Fall 2017"
 author: "Tyson S. Barrett"
 output:
@@ -34,7 +34,7 @@ options(htmltools.dir.version = FALSE)
 
 .pull-left[
 .large[.large[
-- .dcoral[**Join**] = combining two data sets (or *tables*) based on some **primary key(s)**
+- .dcoral[**Join (merge)**] = combining two data sets (or *tables*) based on some **primary key(s)**
 - .nicegreen[**Primary Key**] = a variable that uniquely identifies observations in a table
 ]]]
 
@@ -133,22 +133,30 @@ Sometimes we don't need to join, we need to .dcoral[**bind**]
 # Review Questions
 
 .huge[
-1. Explain joining in a sentence or two.
+- Explain joining in a sentence or two.
+]
 
-2. If you have more individuals in data set 1 than data set 2 and you want to keep all of the observations, what kind of join is best?
+--
 
-3. Thought Experiment: What would happen if you tried to join on something other than your primary key (e.g., it is the primary key in one table but just a foreign key in another)?
+.huge[
+- If you have more individuals in data set 1 than data set 2 and you want to keep all of the observations, what kind of join is best?
+]
+
+--
+
+.huge[
+- Thought Experiment: What would happen if you tried to join on something other than your primary key (e.g., it is the primary key in one table but just a foreign key in another)?
 ]
 
 ---
 # Answers
 
 .huge[
-1. Joining is taking two data sets and joining them based on identifiers (keys) or something like that.
+- Joining is taking two data sets and joining them based on identifiers (keys) or something like that.
 
-2. Either left join or full join.
+- Either left join or full join.
 
-3. This situation is called duplicate keys. See next slide for an example.
+- This situation is called duplicate keys. See next slide for an example.
 ]
 
 ---
@@ -176,7 +184,8 @@ load("data_officeparks/OfficeParks_Tables.rda")
 
 health %>%
   DT::datatable(options = list(pageLength = 4, 
-                               autoWidth = TRUE))
+                               autoWidth = TRUE),
+                rownames = FALSE)
 ```
 
 ---
@@ -185,7 +194,8 @@ health %>%
 ```{r, echo=FALSE}
 demo %>%
   DT::datatable(options = list(pageLength = 4, 
-                               autoWidth = TRUE))
+                               autoWidth = TRUE),
+                rownames = FALSE)
 ```
 
 ---
@@ -194,7 +204,8 @@ demo %>%
 ```{r, echo=FALSE}
 show %>%
   DT::datatable(options = list(pageLength = 4, dom = "t",
-                               autoWidth = TRUE))
+                               autoWidth = TRUE),
+                rownames = FALSE)
 ```
 
 
@@ -208,7 +219,8 @@ inner_join(show, demo, by = "show")
 ```{r, eval=TRUE, echo=FALSE, warning=FALSE, message=FALSE}
 inner_join(show, demo, by = "show") %>%
   DT::datatable(options = list(pageLength = 4, dom = "t",
-                               autoWidth = TRUE))
+                               autoWidth = TRUE),
+                rownames = FALSE)
 ```
 
 ---
@@ -236,7 +248,8 @@ full_join(show, demo, by = "show")
 ```{r, eval=TRUE, echo=FALSE, warning=FALSE, message=FALSE}
 full_join(show, demo, by = "show") %>%
   DT::datatable(options = list(pageLength = 4, dom = "t",
-                               autoWidth = TRUE))
+                               autoWidth = TRUE),
+                rownames = FALSE)
 ```
 
 ---
@@ -262,7 +275,8 @@ full_join(health, demo, by = c("nam", "show")) ## or inner_, left_,, or right_
 ```{r, eval=TRUE, echo=FALSE, warning=FALSE, message=FALSE}
 full_join(health, demo, by = c("nam", "show")) %>%
   DT::datatable(options = list(pageLength = 4,
-                               autoWidth = TRUE))
+                               autoWidth = TRUE),
+                rownames = FALSE)
 ```
 
 ---

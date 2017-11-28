@@ -47,7 +47,7 @@ options(htmltools.dir.version = FALSE)
 .pull-right[
 .large[.large[
 - .bluer[**Foreign Key**] = a variable that uniquely identifies an observation in another table
-- .dcoral[**Relation**] = the relationship between a primary key and a foreign key (generally a 1-to-many relationship)
+- .dcoral[**Relation**] = the relationship between a primary key and a foreign key
 ]]]
 
 ---
@@ -67,18 +67,13 @@ background-size: 800px
 .bluer[**Left Join**] = joining all observations in first table but drop those in the second that are not in the first
 ]]]
 
+--
+
 .pull-right[.large[.large[
 .nicegreen[**Right Join**] = joining all observations in second table but drop those in the first that are not in the second
 
 .dcoral[**Full (Outer) Join**] = joining all the observations whether they are in one or both tables
 ]]]
-
----
-# Inner Join
-
-.huge[Joining only the observations that are in both tables]
-
-![](inner_join_venn.png)
 
 ---
 background-image: url(inner_join_diagram.png)
@@ -89,48 +84,44 @@ background-size: 900px
 
 
 ---
-# Left Join
-
-.huge[joining all observations in first table but drop those in the second that are not in the first]
-
-![](left_join_venn.png)
-
----
-# Right Join
-
-.huge[joining all observations in second table but drop those in the first that are not in the second]
-
-![](right_join_venn.png)
-
----
-# Full Join
-
-.huge[Joining all the observations whether they are in one or both tables]
-
-![](full_join_venn.png)
-
-
----
-background-image: url(leftrightfull_diagram.png)
+background-image: url(left_join_diagram.png)
 background-position: 75% 50%
 background-size: 500px
 
+# Left Join
 
-# What These <br> Look Like
+???
+Anything stand out at you compared to the last diagram?
 
 ---
-background-image: url(binding_diagram.jpg)
-background-position: 50% 90%
-background-size: 600px
+background-image: url(right_join_diagram.png)
+background-position: 75% 50%
+background-size: 500px
 
-# Binding
+# Right Join
 
-.huge[
-Sometimes we don't need to join, we need to .dcoral[**bind**]
+---
+background-image: url(full_join_diagram.png)
+background-position: 75% 50%
+background-size: 500px
+
+# Full Join
+
+---
+# Quiz!
+
+.pull-left[
+![](inner_join_diagram.png)
+![](full_solo_join_diagram.png)
 ]
 
+.pull-right[
+![](leftright_solo_join_diagram.png)
+]
+
+
 ---
-# Review Questions
+# Quiz!
 
 .huge[
 - Explain joining in a sentence or two.
@@ -145,17 +136,25 @@ Sometimes we don't need to join, we need to .dcoral[**bind**]
 --
 
 .huge[
-- Thought Experiment: What would happen if you tried to join on something other than your primary key (e.g., it is the primary key in one table but just a foreign key in another)?
+- Thought Experiment: What would happen if you tried to join on a foreign key?
 ]
 
 ---
 # Answers
 
 .huge[
-- Joining is taking two data sets and joining them based on identifiers (keys) or something like that.
+- Joining is taking two data sets and joining them based on identifiers (keys) or something similar to that.
+]
 
+--
+
+.huge[
 - Either left join or full join.
+]
 
+--
+
+.huge[
 - This situation is called duplicate keys. See next slide for an example.
 ]
 
@@ -207,8 +206,28 @@ show %>%
                 rownames = FALSE)
 ```
 
+---
+# Joining in `R`
+
+.huge[
+We will use the .dcoral[`tidyverse`] package:
+]
+
+.large[.large[
+1. .nicegreen[`inner_join`].dcoral[`(`]`data1, data2`.dcoral[`)`]
+
+2. .nicegreen[`left_join`].dcoral[`(`]`data1, data2`.dcoral[`)`]
+
+3. .nicegreen[`right_join`].dcoral[`(`]`data1, data2`.dcoral[`)`]
+
+4. .nicegreen[`full_join`].dcoral[`(`]`data1, data2`.dcoral[`)`]
+]]
 
 ---
+background-image: url(key_diagram.jpg)
+background-position: 95% 90%
+background-size: 250px
+
 # Inner Join
 
 ```{r, echo=TRUE, eval=FALSE}
@@ -223,6 +242,10 @@ inner_join(show, demo, by = "show") %>%
 ```
 
 ---
+background-image: url(key_diagram.jpg)
+background-position: 95% 90%
+background-size: 250px
+
 # Left and Right Joins
 
 ### Left
@@ -238,6 +261,10 @@ right_join(show, demo, by = "show")
 ```
 
 ---
+background-image: url(key_diagram.jpg)
+background-position: 95% 90%
+background-size: 250px
+
 # Full Joins
 
 ```{r, echo=TRUE, eval=FALSE}
@@ -252,6 +279,10 @@ full_join(show, demo, by = "show") %>%
 ```
 
 ---
+background-image: url(key_diagram.jpg)
+background-position: 95% 90%
+background-size: 300px
+
 # Join Health and Demographics
 
 .huge[
@@ -317,7 +348,7 @@ background-size: 1000px
 
 
 ---
-# Other Common Errors...
+# Common Errors...
 
 .huge[
 1. Understand your data (both primary and foreign keys, missing values)
@@ -368,14 +399,17 @@ rbind(office_health, parks_health)
 
 
 ---
-# Resources
+# Awesome Resource
 
 .huge[
 [R For Data Science by Garrett Grolemund and Hadley Wickham](http://r4ds.had.co.nz/relational-data.html)
 ]
 
+---
+# Now Can Join Like a Cool Kid
 
 
+<div style="width:100%;height:0;padding-bottom:75%;position:relative;"><iframe src="https://giphy.com/embed/3o6nUP7jsZCYziNxlK" width="60%" height="60%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/heyarnold-nicksplat-3o6nUP7jsZCYziNxlK">via GIPHY</a></p>
 
 
 

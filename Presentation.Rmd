@@ -76,36 +76,43 @@ background-size: 800px
 ]]]
 
 ---
-background-image: url(inner_join_diagram.png)
-background-position: 50% 65%
-background-size: 900px
+background-image: url(animated-inner-join.gif)
+background-position: 50% 60%
+background-size: 700px
 
 # Inner Join
 
+.footnote[Thanks to [Garrick Aden-Buie](garrickadenbuie.com) for the gganimate code for these figures!]
 
 ---
-background-image: url(left_join_diagram.png)
-background-position: 75% 50%
-background-size: 500px
+background-image: url(animated-left-join.gif)
+background-position: 50% 60%
+background-size: 700px
 
 # Left Join
+
+.footnote[Thanks to [Garrick Aden-Buie](garrickadenbuie.com) for the gganimate code for these figures!]
 
 ???
 Anything stand out at you compared to the last diagram?
 
 ---
-background-image: url(right_join_diagram.png)
-background-position: 75% 50%
-background-size: 500px
+background-image: url(animated-right-join.gif)
+background-position: 50% 60%
+background-size: 700px
 
 # Right Join
 
+.footnote[Thanks to [Garrick Aden-Buie](garrickadenbuie.com) for the gganimate code for these figures!]
+
 ---
-background-image: url(full_join_diagram.png)
-background-position: 75% 50%
-background-size: 500px
+background-image: url(animated-full-join.gif)
+background-position: 50% 60%
+background-size: 600px
 
 # Full Join
+
+.footnote[Thanks to [Garrick Aden-Buie](garrickadenbuie.com) for the gganimate code for these figures!]
 
 ---
 # Quiz!
